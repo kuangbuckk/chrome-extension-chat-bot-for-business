@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Together chatbot",
+    "version": "1.0.0",
+    "permissions": ["storage", "tabs", "activeTab", "scripting", "webNavigation"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/icon-16.png",
+            "128": "images/icon-128.png"
+        },
+        "default_popup": "index.html"
+    },
+    "host_permissions": ["https://www.facebook.com/messages/*", "https://business.facebook.com/latest/inbox/*"]
+}
